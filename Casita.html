@@ -1,0 +1,68 @@
+<htm>
+
+<head>
+	
+	
+	</head>
+	
+	
+	
+	<body>
+		
+		<h1 id="loco"></h1>
+		
+		
+		<button onclick="userPosition()">location</button>
+	
+	<script>
+		
+		if(navigator.geolocation){
+			
+			navigator.geolocation.watchPosition(userPosition)
+		}
+		
+		
+		
+		function userPosition(position){
+	
+			latitude = position.coords.latitude
+			console.log(latitude)
+			 longitude = position.coords.longitude
+			
+			if(longitude = -66.0916922){
+				
+				if(latitude = 18.3738056){
+					
+					alert("asdftyuijhgfdsasdfgh")
+				}
+				
+				
+			}
+			
+			
+			
+			
+			/**if(18.37370 < latitude < 18.37382){
+				
+				if(-66.09179 < longitude < -66.09174){
+					
+					alert("Sup")
+					
+					
+				}
+				
+				
+			}**/
+		}
+		
+		
+		
+		
+		
+		
+		
+		</script>
+	
+	
+	</body>
+</htm>
